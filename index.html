@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>Weather Dashboard</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="./assets/style.css">
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        
+         <nav class="navbar navbar-expand-xs navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">Weather Dashboard</a>
+            <div class="navbar">
+                <form class="form-inline">
+                    <input class="form-control mr-2" type="search" placeholder="Enter City" id="cityInput">
+                    <input class="btn btn-outline-light" type="submit" id="search">
+                </form>
+            </div>
+        </nav>
+
+
+
+        <div class="row">
+
+            <section class="col-lg-4 mt-2" >
+                <div class="card" style="height: 250px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Recent cities: </h5>
+
+                        <div class="list-group">    
+                            <input type="button" id="city0" class="mt-1" value="">
+                            <input type="button" id="city1" class="mt-1" value="">
+                            <input type="button" id="city2" class="mt-1" value="">
+                            <input type="button" id="city3" class="mt-1" value="">
+                            <input type="button" id="city4" class="mt-1" value="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section class="col-lg-8 mt-2">
+                <div class="card">
+                    <div class="card-body" style="height: 250px;">
+                        <h3 class="card-title" id="currentCity"></h3>
+                        <h5 id="temp"></h5>
+                        <h5 id="hum"></h5>
+                        <h5 id="wind"></h5>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+       
+
+        <div class="row mt-2"  id="forecastDispalay">
+            <div class="col-md-1">
+
+            </div>
+            <div class="col-md-2">
+                <div class="card">
+                    <h5 class="card-title date mt-1 ml-1" id='date1'> Date: </h5>
+                
+                    <img class="icon ml-1" id="icon1">
+                    <p class="ml-1" id='temp1'>Temperature : </p>
+                    <p class="ml-1" id='hum1'>Humidity: </p>
+                </div> 
+            </div>
+
+            <div class="col-md-2">
+                <div class="card cards">
+                    <h5 class="card-title date mt-1 ml-1" id='date2'> Date: </h5>
+                  
+                    <img class="icon ml-1" id="icon2">
+                    <p class="ml-1" id='temp2'>Temperature : </p>
+                    <p class="ml-1" id='hum2'>Humidity: </p>
+                </div> 
+            </div>
+
+            <div class="col-md-2">
+                <div class="card cards">
+                    <h5 class="card-title date mt-1 ml-1" id='date3'> Date: </h5>
+                   
+                    <img class="icon ml-1" id="icon3">
+                    <p class="ml-1" id='temp3'>Temperature : </p>
+                    <p class="ml-1" id='hum3'>Humidity: </p>
+                </div> 
+            </div>
+
+            <div class="col-md-2">
+                <div class="card cards">
+                    <h5 class="card-title date mt-1 ml-1" id='date4'> Date: </h5>
+                 
+                    <img class="icon ml-1" id="icon4">
+                    <p class="ml-1" id='temp4'>Temperature : </p>
+                    <p class="ml-1" id='hum4'>Humidity: </p>
+                </div> 
+            </div>
+
+            <div class="col-md-2">
+                <div class="card cards">
+                    <h5 class="card-title date mt-1 ml-1" id='date5'> Date: </h5>
+               
+                    <img class="icon ml-1" id="icon5">
+                    <p class="ml-1" id='temp5'>Temperature : </p>
+                    <p class="ml-1" id='hum5'>Humidity: </p>
+                </div> 
+            </div>
+        </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./lib/moment.min.js"></script>
+    <script src="./assets/script.js"></script>
+</body>
